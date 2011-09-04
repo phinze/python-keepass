@@ -13,6 +13,8 @@ General structure:
 '''
 
 import struct
+import base64
+import hashlib
 
 from header import DBHDR
 from infoblock import GroupInfo, EntryInfo
@@ -50,7 +52,7 @@ class Database(object):
                                        self.header.master_seed,
                                        self.header.master_seed2,
                                        self.header.key_enc_rounds)
-        payload = self.decrypt_payload(payload, self.finalkey, 
+        payload = self.decrypt_payload(payload, self.finalkey,
                                        self.header.encryption_type(),
                                        self.header.encryption_iv)
 
@@ -81,14 +83,21 @@ class Database(object):
         import hashlib
 
         key = hashlib.sha256(masterkey).digest()
+        print "starting_key: " + base64.b64encode(key)
+        print "using masterseed: " + base64.b64encode(masterseed)
+        print "using masterseed2: " + base64.b64encode(masterseed2)
         cipher = AES.new(masterseed2,  AES.MODE_ECB)
         
+        print "going " + str(rounds) + " rounds"
         while rounds:
             rounds -= 1
             key = cipher.encrypt(key)
             continue
         key = hashlib.sha256(key).digest()
-        return hashlib.sha256(masterseed + key).digest()
+        print "after_rounds: " + base64.b64encode(key)
+        all_done = hashlib.sha256(masterseed + key).digest()
+        print "all_done: " + base64.b64encode(all_done)
+        return all_done
 
     def decrypt_payload(self, payload, finalkey, enctype, iv):
         'Decrypt payload (non-header) part of the buffer'
@@ -112,11 +121,15 @@ class Database(object):
         'Decrypt payload buffer with AES CBC'
 
         from Crypto.Cipher import AES
+        print "using encryption_iv: " + base64.b64encode(iv)
         cipher = AES.new(finalkey, AES.MODE_CBC, iv)
+        print "encrypted payload: " + hashlib.sha256(payload).hexdigest()
         payload = cipher.decrypt(payload)
+        print "decrypted payload: " + hashlib.sha256(payload).hexdigest()
         extra = ord(payload[-1])
         payload = payload[:len(payload)-extra]
-        #print 'Unpadding payload by',extra
+        print 'Unpadding payload by',extra
+        print "unpadded payload: " + hashlib.sha256(payload).hexdigest()
         return payload
 
     def encrypt_payload(self, payload, finalkey, enctype, iv):
@@ -304,7 +317,7 @@ class Database(object):
             pass
 
         # fixme, this should probably be moved into a new constructor
-        def make_entry()
+        def make_entry():
             new_entry = infoblocks.EntryItem()
             new_entry.uuid = self.gen_uuid()
             new_entry.groupid = group.groupid

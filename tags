@@ -1,0 +1,173 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+AES	python/keepass/kpdb.py	/^        from Crypto.Cipher import AES$/;"	i
+Cli	python/keepass/cli.py	/^class Cli(object):$/;"	c
+CodeHighlightOff	README.html	/^ function CodeHighlightOff(elem, id)$/;"	f
+CodeHighlightOn	README.html	/^ function CodeHighlightOn(elem, id)$/;"	f
+CollectVisitor	python/keepass/hier.py	/^class CollectVisitor(Visitor):$/;"	c
+DBHDR	python/keepass/header.py	/^class DBHDR(object):$/;"	c
+DBHDR	python/keepass/kpdb.py	/^from header import DBHDR$/;"	i
+Database	python/keepass/kpdb.py	/^class Database(object):$/;"	c
+EntryInfo	python/keepass/infoblock.py	/^class EntryInfo(InfoBase):$/;"	c
+EntryInfo	python/keepass/kpdb.py	/^from infoblock import GroupInfo, EntryInfo$/;"	i
+GroupInfo	python/keepass/hier.py	/^        from infoblock import GroupInfo$/;"	i
+GroupInfo	python/keepass/infoblock.py	/^class GroupInfo(InfoBase):$/;"	c
+GroupInfo	python/keepass/kpdb.py	/^from infoblock import GroupInfo, EntryInfo$/;"	i
+InfoBase	python/keepass/infoblock.py	/^class InfoBase(object):$/;"	c
+Node	python/keepass/hier.py	/^class Node(object):$/;"	c
+Node	python/keepass/kpdb.py	/^        from hier import Node$/;"	i
+OptionParser	python/keepass/cli.py	/^        from optparse import OptionParser$/;"	i
+PathVisitor	python/keepass/hier.py	/^class PathVisitor(Visitor):$/;"	c
+Visitor	python/keepass/hier.py	/^class Visitor(object):$/;"	c
+__call_	python/keepass/hier.py	/^    def __call_(self):$/;"	m	class:Visitor	file:
+__call__	python/keepass/cli.py	/^    def __call__(self):$/;"	m	class:Cli	file:
+__call__	python/keepass/hier.py	/^    def __call__(self,g_or_e):$/;"	m	class:CollectVisitor	file:
+__call__	python/keepass/hier.py	/^    def __call__(self,g_or_e):$/;"	m	class:PathVisitor	file:
+__init__	python/keepass/cli.py	/^    def __init__(self,args=None):$/;"	m	class:Cli
+__init__	python/keepass/header.py	/^    def __init__(self,buf=None):$/;"	m	class:DBHDR
+__init__	python/keepass/hier.py	/^    def __init__(self):$/;"	m	class:CollectVisitor
+__init__	python/keepass/hier.py	/^    def __init__(self,group=None,entries=None,nodes=None):$/;"	m	class:Node
+__init__	python/keepass/hier.py	/^    def __init__(self,path,stop_on_first = True):$/;"	m	class:PathVisitor
+__init__	python/keepass/infoblock.py	/^    def __init__(self,format,string=None):$/;"	m	class:InfoBase
+__init__	python/keepass/infoblock.py	/^    def __init__(self,string):$/;"	m	class:EntryInfo
+__init__	python/keepass/infoblock.py	/^    def __init__(self,string):$/;"	m	class:GroupInfo
+__init__	python/keepass/kpdb.py	/^    def __init__(self, filename = None, masterkey=""):$/;"	m	class:Database
+__len__	python/keepass/infoblock.py	/^    def __len__(self):$/;"	m	class:InfoBase	file:
+__str__	python/keepass/header.py	/^    def __str__(self):$/;"	m	class:DBHDR	file:
+__str__	python/keepass/hier.py	/^    def __str__(self):$/;"	m	class:Node	file:
+__str__	python/keepass/infoblock.py	/^    def __str__(self):$/;"	m	class:InfoBase	file:
+__str__	python/keepass/kpdb.py	/^    def __str__(self):$/;"	m	class:Database	file:
+_dump	python/keepass/cli.py	/^    def _dump(self,opts):$/;"	m	class:Cli
+_dump_op	python/keepass/cli.py	/^    def _dump_op(self):$/;"	m	class:Cli
+_entry	python/keepass/cli.py	/^    def _entry(self,opts):$/;"	m	class:Cli
+_entry_op	python/keepass/cli.py	/^    def _entry_op(self):$/;"	m	class:Cli
+_general	python/keepass/cli.py	/^    def _general(self,opts):$/;"	m	class:Cli
+_general_op	python/keepass/cli.py	/^    def _general_op(self):$/;"	m	class:Cli
+_help	python/keepass/cli.py	/^    def _help(self,opts):$/;"	m	class:Cli
+_help_op	python/keepass/cli.py	/^    def _help_op(self):$/;"	m	class:Cli
+_open	python/keepass/cli.py	/^    def _open(self,opts):$/;"	m	class:Cli
+_open_op	python/keepass/cli.py	/^    def _open_op(self):$/;"	m	class:Cli
+_save	python/keepass/cli.py	/^    def _save(self,opts):$/;"	m	class:Cli
+_save_op	python/keepass/cli.py	/^    def _save_op(self):$/;"	m	class:Cli
+a2b_hex	python/keepass/infoblock.py	/^    from binascii import b2a_hex, a2b_hex$/;"	i
+add_entry	python/keepass/kpdb.py	/^    def add_entry(self,path,title,username,password,url="",note="",imigid=1,append=True):$/;"	m	class:Database
+ascii_de	python/keepass/infoblock.py	/^def ascii_de():$/;"	f
+b2a_hex	python/keepass/infoblock.py	/^    from binascii import b2a_hex, a2b_hex$/;"	i
+base64	python/keepass/header.py	/^import base64$/;"	i
+base64	python/keepass/kpdb.py	/^import base64$/;"	i
+buf	tests/test_write.py	/^buf = db.header.encode()$/;"	v
+cli	keepassc.py	/^from keepass import cli$/;"	i
+cli	tests/test_cli.py	/^from keepass import cli$/;"	i
+cliobj	keepassc.py	/^cliobj = cli.Cli(sys.argv[1:])$/;"	v
+cliobj	python/keepass/cli.py	/^    cliobj = Cli(sys.argv[1:])$/;"	v	class:Cli
+commands	python/keepass/cli.py	/^    commands = [$/;"	v	class:Cli
+date_de	python/keepass/infoblock.py	/^def date_de():$/;"	f
+datetime	python/keepass/infoblock.py	/^    from datetime import datetime$/;"	i
+db	python/testy.py	/^db = kpdb.Database('\/Users\/phinze\/dev\/setec_astronomy\/spec\/test_database.kdb', 'testmasterpassword')$/;"	v
+db	tests/dumpdb.py	/^db = kpdb.Database(filename,masterkey)$/;"	v
+db	tests/test_hier.py	/^db = kpdb.Database(filename,masterkey)$/;"	v
+db	tests/test_write.py	/^db = kpdb.Database(masterkey,filename)$/;"	v
+db2	tests/test_write.py	/^db2 = kpdb.Database(masterkey,filename2)$/;"	v
+decode	python/keepass/header.py	/^    def decode(self,buf):$/;"	m	class:DBHDR
+decode	python/keepass/infoblock.py	/^    def decode(buf):$/;"	f	function:date_de
+decode	python/keepass/infoblock.py	/^    def decode(self,string):$/;"	m	class:InfoBase
+decrypt_payload	python/keepass/kpdb.py	/^    def decrypt_payload(self, payload, finalkey, enctype, iv):$/;"	m	class:Database
+decrypt_payload_aes_cbc	python/keepass/kpdb.py	/^    def decrypt_payload_aes_cbc(self, payload, finalkey, iv):$/;"	m	class:Database
+dump_entries	python/keepass/kpdb.py	/^    def dump_entries(self,format,show_passwords=False):$/;"	m	class:Database
+encode	python/keepass/header.py	/^    def encode(self):$/;"	m	class:DBHDR
+encode	python/keepass/infoblock.py	/^    def encode(self):$/;"	m	class:InfoBase
+encode	python/keepass/infoblock.py	/^    def encode(val):$/;"	f	function:date_de
+encode_payload	python/keepass/kpdb.py	/^    def encode_payload(self):$/;"	m	class:Database
+encrypt_payload	python/keepass/kpdb.py	/^    def encrypt_payload(self, payload, finalkey, enctype, iv):$/;"	m	class:Database
+encrypt_payload_aes_cbc	python/keepass/kpdb.py	/^    def encrypt_payload_aes_cbc(self, payload, finalkey, iv):$/;"	m	class:Database
+encryption_flags	python/keepass/header.py	/^    encryption_flags = ($/;"	v	class:DBHDR
+encryption_type	python/keepass/header.py	/^    def encryption_type(self):$/;"	m	class:DBHDR
+filename	tests/dumpdb.py	/^filename = sys.argv[1]$/;"	v
+filename	tests/test_hier.py	/^filename = sys.argv[1]$/;"	v
+filename	tests/test_write.py	/^filename = sys.argv[1]$/;"	v
+filename2	tests/test_write.py	/^filename2 = filename2[0] + '2' + filename2[1]$/;"	v
+filename2	tests/test_write.py	/^filename2 = os.path.splitext(filename)$/;"	v
+final_key	python/keepass/kpdb.py	/^    def final_key(self,masterkey,masterseed,masterseed2,rounds):$/;"	m	class:Database
+format	python/keepass/header.py	/^    format = [$/;"	v	class:DBHDR
+format	python/keepass/infoblock.py	/^    format = {$/;"	v	class:EntryInfo
+format	python/keepass/infoblock.py	/^    format = {$/;"	v	class:GroupInfo
+fp	tests/test_write.py	/^fp = open(filename2,"w")$/;"	v
+gen_groupid	python/keepass/kpdb.py	/^    def gen_groupid(self):$/;"	m	class:Database
+gen_uuid	python/keepass/kpdb.py	/^    def gen_uuid(self):$/;"	m	class:Database
+get	python/keepass/hier.py	/^    def get(self,path):$/;"	m	class:Node
+getpass	python/keepass/cli.py	/^        import getpass$/;"	i
+group	python/keepass/kpdb.py	/^    def group(self,field,value):$/;"	m	class:Database
+h	tests/test_hier.py	/^h = db.hierarchy()$/;"	v
+hashlib	python/keepass/kpdb.py	/^        import hashlib$/;"	i
+hashlib	python/keepass/kpdb.py	/^import hashlib$/;"	i
+hier	python/keepass/kpdb.py	/^        import hier$/;"	i
+hier	python/keepass/kpdb.py	/^        import hier, infoblocks$/;"	i
+hier	tests/test_hier.py	/^from keepass import hier$/;"	i
+hierarchy	python/keepass/kpdb.py	/^    def hierarchy(self):$/;"	m	class:Database
+ib	tests/test_de.py	/^from keepass import infoblock as ib$/;"	i
+infoblocks	python/keepass/kpdb.py	/^        import hier, infoblocks$/;"	i
+int_de	python/keepass/infoblock.py	/^def int_de():$/;"	f
+kpdb	python/keepass/cli.py	/^        import kpdb$/;"	i
+kpdb	python/testy.py	/^from keepass import kpdb$/;"	i
+kpdb	tests/dumpdb.py	/^    from keepass import kpdb$/;"	i
+kpdb	tests/test_hier.py	/^    from keepass import kpdb$/;"	i
+kpdb	tests/test_write.py	/^    from keepass import kpdb$/;"	i
+l	tests/test_listproc.py	/^l = [1,2,3,4,5,6]$/;"	v
+length	python/keepass/header.py	/^    length = 124$/;"	v	class:DBHDR
+level	python/keepass/hier.py	/^    def level(self):$/;"	m	class:Node
+make_entry	python/keepass/kpdb.py	/^        def make_entry():$/;"	f	function:Database.add_entry
+masterkey	tests/dumpdb.py	/^masterkey  = sys.argv[2]$/;"	v
+masterkey	tests/test_hier.py	/^masterkey  = sys.argv[2]$/;"	v
+masterkey	tests/test_write.py	/^masterkey  = sys.argv[2]$/;"	v
+name	python/keepass/hier.py	/^    def name(self):$/;"	m	class:Node
+name	python/keepass/infoblock.py	/^    def name(self):$/;"	m	class:EntryInfo
+name	python/keepass/infoblock.py	/^    def name(self):$/;"	m	class:GroupInfo
+node_with_group	python/keepass/hier.py	/^    def node_with_group(self,group):$/;"	m	class:Node
+null_de	python/keepass/infoblock.py	/^def null_de(): return (lambda buf:None, lambda val:None)$/;"	f
+obj	tests/test_hier.py	/^obj = h.walk(visitor)$/;"	v
+os	tests/dumpdb.py	/^import sys,os$/;"	i
+os	tests/test_cli.py	/^import os,sys$/;"	i
+os	tests/test_hier.py	/^import sys,os$/;"	i
+os	tests/test_write.py	/^import sys,os$/;"	i
+parse_args	python/keepass/cli.py	/^    def parse_args(self,args):$/;"	m	class:Cli
+path	tests/dumpdb.py	/^    path = os.path.dirname(os.path.dirname(__file__))$/;"	v
+path	tests/dumpdb.py	/^    path = os.path.join('python')$/;"	v
+path	tests/test_hier.py	/^    path = os.path.dirname(os.path.dirname(__file__))$/;"	v
+path	tests/test_hier.py	/^    path = os.path.join('python')$/;"	v
+path	tests/test_hier.py	/^path = sys.argv[3]$/;"	v
+path	tests/test_write.py	/^    path = os.path.dirname(os.path.dirname(__file__))$/;"	v
+path	tests/test_write.py	/^    path = os.path.join('python')$/;"	v
+pretty	python/keepass/hier.py	/^    def pretty(self,depth=0):$/;"	m	class:Node
+proc	tests/test_listproc.py	/^def proc(ll):$/;"	f
+read	python/keepass/kpdb.py	/^    def read(self,filename):$/;"	m	class:Database
+results	python/keepass/hier.py	/^    def results(self): $/;"	m	class:PathVisitor
+short_de	python/keepass/infoblock.py	/^def short_de():$/;"	f
+shunt_de	python/keepass/infoblock.py	/^def shunt_de(): return (lambda buf:buf, lambda val:val)$/;"	f
+signatures	python/keepass/header.py	/^    signatures = (0x9AA2D903,0xB54BFB65)$/;"	v	class:DBHDR
+splitopts	python/keepass/cli.py	/^        def splitopts(argv):$/;"	f	function:Cli.parse_args
+string_de	python/keepass/infoblock.py	/^def string_de():$/;"	f
+struct	python/keepass/header.py	/^        import struct$/;"	i
+struct	python/keepass/infoblock.py	/^import struct$/;"	i
+struct	python/keepass/kpdb.py	/^import struct$/;"	i
+sys	keepassc.py	/^import sys$/;"	i
+sys	python/keepass/cli.py	/^    import sys$/;"	i
+sys	tests/dumpdb.py	/^import sys,os$/;"	i
+sys	tests/test_cli.py	/^import os,sys$/;"	i
+sys	tests/test_cli_hiding.py	/^import sys$/;"	i
+sys	tests/test_hier.py	/^import sys,os$/;"	i
+sys	tests/test_write.py	/^import sys,os$/;"	i
+test_null	tests/test_de.py	/^def test_null():$/;"	f
+test_parse_args	tests/test_cli.py	/^def test_parse_args():$/;"	f
+test_shunt	tests/test_de.py	/^def test_shunt():$/;"	f
+test_string	tests/test_de.py	/^def test_string():$/;"	f
+time	tests/test_cli_hiding.py	/^import time$/;"	i
+update	python/keepass/kpdb.py	/^    def update(self,groups,entries):$/;"	m	class:Database
+update	python/keepass/kpdb.py	/^    def update(self,hierarchy):$/;"	m	class:Database
+visitor	tests/test_hier.py	/^visitor = hier.PathVisitor(path,False)$/;"	v
+visitor	tests/test_hier.py	/^visitor= hier.CollectVisitor()$/;"	v
+walk	python/keepass/hier.py	/^    def walk(self,visitor):$/;"	m	class:Node
+write	python/keepass/kpdb.py	/^    def write(self,filename,masterkey=""):$/;"	m	class:Database

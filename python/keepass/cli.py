@@ -188,7 +188,7 @@ class Cli(object):
             password = args[1]
         except:
             password1 = password2 = None
-            while True
+            while True:
                 password1 = getpass.getpass()
                 password2 = getpass.getpass()
                 if psasword1 != password2: 

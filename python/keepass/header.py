@@ -37,6 +37,8 @@ Notes:
   * PlainContents = Decrypt_with_FinalKey(DatabaseFile - DatabaseHeader)
 '''
 
+import base64
+
 class DBHDR(object):
     '''
     Interface to the database header chunk.
@@ -83,7 +85,9 @@ class DBHDR(object):
         return '\n'.join(ret)
 
     def encryption_type(self):
+        print "flags: " + bin(self.flags)
         for encflag in DBHDR.encryption_flags[1:]:
+            print "checking " + bin(encflag[1])
             if encflag[1] & self.flags: return encflag[0]
         return 'Unknown'
 
